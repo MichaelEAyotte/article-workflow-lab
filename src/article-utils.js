@@ -10,7 +10,9 @@ function escapeHtml(value) {
 }
 
 function stripTags(value) {
-  return String(value).replace(/<[^>]*>/g, "").replace(/&nbsp;/gi, " ").trim();
+  return String(value)
+    .replace(/<\/?(?:p|div|h[1-6]|li|ul|ol|br|hr|blockquote|section|article|header|footer|table|tr|td|th|pre)\b[^>]*>/gi, " ")
+    .replace(/<[^>]*>/g, "").replace(/&nbsp;/gi, " ").trim();
 }
 
 function textFromHtml(value) {
