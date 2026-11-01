@@ -23,7 +23,7 @@ Keeping these functions independent of file writes and cloud services makes the 
 
 ## Implementation status
 
-The utilities are extracted from implemented private source. The standalone wrapper, examples and tests are new review work. The full article suite was separately exercised in Phase 1; this repository's tests cover only the extracted subset. No live publication or storage integration is included.
+The utilities are extracted from implemented private source. The standalone wrapper, examples and tests were created for this showcase. This repository's tests cover only the extracted subset. No live publication or storage integration is included.
 
 
 ## Run the code in this repository
@@ -35,10 +35,10 @@ npm test
 npm run demo
 ```
 
-See [source provenance, scope and evaluation](CODE-REVIEW.md). Tests exercise the standalone code, not the private production system. This repository has a clean history and no deployment workflow. It remains private pending publication and license approval.
+See [source provenance, scope and evaluation](CODE-REVIEW.md). The six passing tests exercise the standalone code, not the private production system. This repository has no deployment workflow. The selected source, tests, fictional examples and original documentation are available under the [MIT License](LICENSE), copyright Michael E. Ayotte.
 
 ## Review and maintenance
 
-The standalone tests run in a test-only GitHub Actions workflow with read-only repository access, no deployment and no production secrets. They do not establish live-system acceptance. Report a suspected sensitive-data exposure privately to the repository owner; do not place the sensitive value in an issue. Public release and licensing require owner review.
+The standalone tests run in a test-only GitHub Actions workflow with read-only repository access, no deployment and no production secrets. They do not establish live-system acceptance. Report a suspected sensitive-data exposure privately to [Michael E. Ayotte](https://github.com/MichaelEAyotte); do not place the sensitive value in an issue.
 
-[Publication decision, licensing recommendation and final release gates](PUBLICATION.md).
+[Publication scope, licensing and release checks](PUBLICATION.md).
